@@ -1,11 +1,14 @@
 body {
-    background-color: hsl(223, 19%, 93%);
+    background-color: hsl(228, 33%, 97%);
     font-family: 'Rubik', sans-serif;
     font-size: 16px;
 }
 
 .comment {
     background-color: white;
+    background-color: white;
+    border-radius: 8px;
+    margin: 1.25rem;
 }
 
 .replyBtn {
@@ -19,3 +22,28 @@ body {
 .deleteBtn {
     color: hsl(358, 79%, 66%);
 }
+
+.postedComments {
+    margin: auto;
+    width: 50%;
+}
+
+.replyComments {
+    margin: auto;
+    width: 40%;
+}
+
+#commentArea {
+    margin: auto;
+    width: 50%;
+    background-color: white;
+}
+
+#addCommentBox {
+    width: 72%;
+    height: 65px;
+    margin-bottom: 23px;
+    border-radius: 6px;
+    border: 1px solid hsl(223, 19%, 93%);
+}
+

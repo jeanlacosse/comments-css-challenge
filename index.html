@@ -1,30 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+
   <!-- Fonts from google -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
-
+  <link rel="stylesheet" href="styles.css">
   <title>Frontend Mentor | Interactive comments section</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
   </style>
 </head>
+
 <body>
-  
+  <ul class="postedComments">
+    <li>
+      <!-- comment 1 -->
+      <div class="comment">
+        <span class="voteUpDown">
+          <svg width="11" height="11" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M6.33 10.896c.137 0 .255-.05.354-.149.1-.1.149-.217.149-.354V7.004h3.315c.136 0 .254-.05.354-.149.099-.1.148-.217.148-.354V5.272a.483.483 0 0 0-.148-.354.483.483 0 0 0-.354-.149H6.833V1.4a.483.483 0 0 0-.149-.354.483.483 0 0 0-.354-.149H4.915a.483.483 0 0 0-.354.149c-.1.1-.149.217-.149.354v3.37H1.08a.483.483 0 0 0-.354.15c-.1.099-.149.217-.149.353v1.23c0 .136.05.254.149.353.1.1.217.149.354.149h3.333v3.39c0 .136.05.254.15.353.098.1.216.149.353.149H6.33Z"
+              fill="#C5C6EF" />
+          </svg>
+          <svg width="11" height="3" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M9.256 2.66c.204 0 .38-.056.53-.167.148-.11.222-.243.222-.396V.722c0-.152-.074-.284-.223-.395a.859.859 0 0 0-.53-.167H.76a.859.859 0 0 0-.53.167C.083.437.009.57.009.722v1.375c0 .153.074.285.223.396a.859.859 0 0 0 .53.167h8.495Z"
+              fill="#C5C6EF" />
+          </svg>
+        </span>
+        <span class="profilePic">
+          <img src="./images/avatars/image-juliusomo.png" alt="">
+        </span>
+        <span class="username">jllacosse</span>
+        <span class="whenPosted">1 month ago</span>
+        <span><button class="replyBtn"><img src="./images/icon-reply.svg" alt="">Reply</button></span>
+        <span class="deleteBtn"></span>
+        <span class="editBtn"></span>
+        <div class="commentText">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur.
+        </div>
+      </div>
+    </li>
+    <li>
+      <!-- commment 2 -->
+      <div class="comment">
+        <span class="voteUpDown">
+          <svg width="11" height="11" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M6.33 10.896c.137 0 .255-.05.354-.149.1-.1.149-.217.149-.354V7.004h3.315c.136 0 .254-.05.354-.149.099-.1.148-.217.148-.354V5.272a.483.483 0 0 0-.148-.354.483.483 0 0 0-.354-.149H6.833V1.4a.483.483 0 0 0-.149-.354.483.483 0 0 0-.354-.149H4.915a.483.483 0 0 0-.354.149c-.1.1-.149.217-.149.354v3.37H1.08a.483.483 0 0 0-.354.15c-.1.099-.149.217-.149.353v1.23c0 .136.05.254.149.353.1.1.217.149.354.149h3.333v3.39c0 .136.05.254.15.353.098.1.216.149.353.149H6.33Z"
+              fill="#C5C6EF" />
+          </svg>
+          <svg width="11" height="3" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M9.256 2.66c.204 0 .38-.056.53-.167.148-.11.222-.243.222-.396V.722c0-.152-.074-.284-.223-.395a.859.859 0 0 0-.53-.167H.76a.859.859 0 0 0-.53.167C.083.437.009.57.009.722v1.375c0 .153.074.285.223.396a.859.859 0 0 0 .53.167h8.495Z"
+              fill="#C5C6EF" />
+          </svg>
+        </span>
+        <span class="profilePic">
+          <img src="./images/avatars/image-ramsesmiron.png" alt="">
+        </span>
+        <span class="username">rwhitneyeliason</span>
+        <span class="whenPosted">2 weeks ago</span>
+        <span><button class="replyBtn"><img src="./images/icon-reply.svg" alt="">Reply</button></span>
+        <span class="deleteBtn"></span>
+        <span class="editBtn"></span>
+        <div class="commentText">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+          mollit anim id est laborum."</div>
+      </div>
+    </li>
+  </ul>
+  <ul class="replyComments">
+    <li>
+      <!-- reply 1 -->
+      <div class="comment">
+        <span class="voteUpDown">
+          <svg width="11" height="11" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M6.33 10.896c.137 0 .255-.05.354-.149.1-.1.149-.217.149-.354V7.004h3.315c.136 0 .254-.05.354-.149.099-.1.148-.217.148-.354V5.272a.483.483 0 0 0-.148-.354.483.483 0 0 0-.354-.149H6.833V1.4a.483.483 0 0 0-.149-.354.483.483 0 0 0-.354-.149H4.915a.483.483 0 0 0-.354.149c-.1.1-.149.217-.149.354v3.37H1.08a.483.483 0 0 0-.354.15c-.1.099-.149.217-.149.353v1.23c0 .136.05.254.149.353.1.1.217.149.354.149h3.333v3.39c0 .136.05.254.15.353.098.1.216.149.353.149H6.33Z"
+              fill="#C5C6EF" />
+          </svg>
+          <svg width="11" height="3" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M9.256 2.66c.204 0 .38-.056.53-.167.148-.11.222-.243.222-.396V.722c0-.152-.074-.284-.223-.395a.859.859 0 0 0-.53-.167H.76a.859.859 0 0 0-.53.167C.083.437.009.57.009.722v1.375c0 .153.074.285.223.396a.859.859 0 0 0 .53.167h8.495Z"
+              fill="#C5C6EF" />
+          </svg>
+        </span>
+        <span class="profilePic">
+          <img src="./images/avatars/image-amyrobson.png" alt="">
+        </span>
+        <span class="username">adubois</span>
+        <span class="whenPosted">1 week ago</span>
+        <span><button class="replyBtn"><img src="./images/icon-reply.svg" alt="">Reply</button></span>
+        <span class="deleteBtn"></span>
+        <span class="editBtn"></span>
+        <div class="commentText">
+          <span class="@replyName">@rwhitneyeliason</span>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </div>
+      </div>
+    </li>
+    <li>
+      <div class="comment">
+        <span class="voteUpDown">
+          <svg width="11" height="11" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M6.33 10.896c.137 0 .255-.05.354-.149.1-.1.149-.217.149-.354V7.004h3.315c.136 0 .254-.05.354-.149.099-.1.148-.217.148-.354V5.272a.483.483 0 0 0-.148-.354.483.483 0 0 0-.354-.149H6.833V1.4a.483.483 0 0 0-.149-.354.483.483 0 0 0-.354-.149H4.915a.483.483 0 0 0-.354.149c-.1.1-.149.217-.149.354v3.37H1.08a.483.483 0 0 0-.354.15c-.1.099-.149.217-.149.353v1.23c0 .136.05.254.149.353.1.1.217.149.354.149h3.333v3.39c0 .136.05.254.15.353.098.1.216.149.353.149H6.33Z"
+              fill="#C5C6EF" />
+          </svg>
+          <svg width="11" height="3" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M9.256 2.66c.204 0 .38-.056.53-.167.148-.11.222-.243.222-.396V.722c0-.152-.074-.284-.223-.395a.859.859 0 0 0-.53-.167H.76a.859.859 0 0 0-.53.167C.083.437.009.57.009.722v1.375c0 .153.074.285.223.396a.859.859 0 0 0 .53.167h8.495Z"
+              fill="#C5C6EF" />
+          </svg>
+        </span>
+        <span class="profilePic">
+          <img src="./images/avatars/image-maxblagun.png" alt="">
+        </span>
+        <span class="username">andrethegiant</span>
+        <span class="whenPosted">2 days ago</span>
+        <span class="replyBtn"></span>
+        <span><button class="deleteBtn"><img src="./images/icon-delete.svg" alt="">Delete</button></span>
+        <span><button class="editBtn"><img src="./images/icon-edit.svg" alt="">Edit</button></span>
+        <div class="commentText">
+          <span class="@replyName">@adubois</span>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+        </div>
+      </div>
+    </li>
+  </ul>
+
+  <!-- reply 2 -->
+
+  <div id="addCommentBox">
+    <span class="profilePic">
+      <img src="./images/avatars/image-maxblagun.png" alt="">
+    </span>
+    <input type="text" placeholder="Add a comment...">
+    <button type="submit">SEND</button>
+  </div>
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Your Name Here</a>.
   </div>
 </body>
+
 </html>

@@ -83,3 +83,30 @@ Challenge adapted from Frontend Mentor.
 If you would like the design files (we provide Sketch & Figma versions) to inspect the design in more detail, you can [subscribe as a PRO member](https://www.frontendmentor.io/pro).
 
 Want some support on the challenge? [Join our Slack community](https://www.frontendmentor.io/slack) and ask questions in the **#help** channel.
+
+
+TODO
+HTML
+    [x] create input box
+        [x] bottom of page
+        [x]"add a comment" as placeholder
+        [x] send button attached
+    [] create comments
+        [x]placeholder for 
+            [x] up/down vote
+            [x]username
+            [x] time ago
+            [] delete/edit buttons
+        [x] indent replys to other comments in a ul section
+        [x] add in placeholder text
+        [x] add in images where buttons are
+            [x]add buttons into spans
+
+CSS
+    [] change background color
+    [] change comment color
+    [] add comment borders
+    [] center content on page
+    
+    [] paddig and margin to space out evenly
+    [] hover and click interaction on buttons

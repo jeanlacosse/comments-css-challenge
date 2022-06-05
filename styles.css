@@ -1,0 +1,21 @@
+body {
+    background-color: hsl(223, 19%, 93%);
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+}
+
+.comment {
+    background-color: white;
+}
+
+.replyBtn {
+    color: hsl(212, 24%, 26%)
+}
+
+.editBtn {
+    color: hsl(212, 24%, 26%);
+}
+
+.deleteBtn {
+    color: hsl(358, 79%, 66%);
+}

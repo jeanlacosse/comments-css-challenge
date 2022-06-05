@@ -5,7 +5,7 @@ body {
     margin-top: 4rem;
 }
 
-.comment {
+.comment, #commentArea {
     background-color: white;
     background-color: white;
     border-radius: 8px;
@@ -21,20 +21,18 @@ body {
     font-weight: 500;
 }
 
-
-
 .deleteBtn {
     color: hsl(358, 79%, 66%);
 }
 
 .postedComments {
     margin: auto;
-    width: 50%;
+    width: 60%;
 }
 
 .replyComments {
     margin: auto;
-    width: 40%;
+    width: 45%;
 }
 
 #commentArea {
@@ -45,8 +43,8 @@ body {
 
 #addCommentBox {
     width: 72%;
-    height: 65px;
-    margin-bottom: 23px;
+    height: 95px;
+    margin-bottom: 5px;
     border-radius: 6px;
     border: 1px solid hsl(223, 19%, 93%);
 }
@@ -86,4 +84,20 @@ span {
 
 .commentText, .whenPosted {
     color: grey;
+}
+
+ul {
+    list-style-type: none;
+}
+
+#submitBtn {
+    background-color: hsl(238, 40%, 52%);
+    color: white;
+    border-radius: 7px;
+    width: 15%;
+    padding: 14px;
+    font-weight: 100;
+    position: relative;
+    top: -25px;
+    right: -12px;
 }

@@ -2,6 +2,7 @@ body {
     background-color: hsl(228, 33%, 97%);
     font-family: 'Rubik', sans-serif;
     font-size: 16px;
+    margin-top: 4rem;
 }
 
 .comment {
@@ -9,15 +10,18 @@ body {
     background-color: white;
     border-radius: 8px;
     margin: 1.25rem;
+    padding: 1.25rem;
 }
 
-.replyBtn {
-    color: hsl(212, 24%, 26%)
+.replyBtn, .editBtn, .replyName {
+    color: hsl(238, 40%, 52%)
 }
 
-.editBtn {
-    color: hsl(212, 24%, 26%);
+.replyName {
+    font-weight: 500;
 }
+
+
 
 .deleteBtn {
     color: hsl(358, 79%, 66%);
@@ -47,3 +51,39 @@ body {
     border: 1px solid hsl(223, 19%, 93%);
 }
 
+button {
+    color: hsl(358, 79%, 66%);
+    border: none;
+    background-color: white;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.icon {
+    margin-right: 6px;
+}
+
+.profilePic {
+    width: 34px;
+    position: relative;
+    top: 11px;
+}
+
+span {
+    justify-content: center;
+    padding: 6px;
+}
+
+.userInfo {
+    position: relative;
+    bottom: 12px;
+}
+
+.username {
+    font-weight: 500;
+}
+
+.commentText, .whenPosted {
+    color: grey;
+}

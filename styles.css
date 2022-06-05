@@ -10,7 +10,9 @@ body {
     background-color: white;
     border-radius: 8px;
     margin: 1.25rem;
-    padding: 1.25rem;
+    padding: 1.5rem;
+    padding-left: 4.5rem;
+    line-height: 1.4;
 }
 
 .replyBtn, .editBtn, .replyName {
@@ -126,4 +128,15 @@ ul {
 
 .deleteBtn:active {
     color: hsl(357, 100%, 86%);
+}
+
+.upArrow {
+    position: relative;
+    right: 43px;
+}
+
+.downArrow {
+    position: relative;
+    right: 57px;
+    top: 56px;
 }

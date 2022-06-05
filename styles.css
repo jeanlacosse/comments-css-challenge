@@ -1,0 +1,142 @@
+body {
+    background-color: hsl(228, 33%, 97%);
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+    margin-top: 4rem;
+}
+
+.comment, #commentArea {
+    background-color: white;
+    background-color: white;
+    border-radius: 8px;
+    margin: 1.25rem;
+    padding: 1.5rem;
+    padding-left: 4.5rem;
+    line-height: 1.4;
+}
+
+.replyBtn, .editBtn, .replyName {
+    color: hsl(238, 40%, 52%)
+}
+
+.replyName {
+    font-weight: 500;
+}
+
+.deleteBtn {
+    color: hsl(358, 79%, 66%);
+}
+
+.postedComments {
+    margin: auto;
+    width: 60%;
+}
+
+.replyComments {
+    margin: auto;
+    width: 45%;
+}
+
+#commentArea {
+    margin: auto;
+    width: 50%;
+    background-color: white;
+}
+
+#addCommentBox {
+    width: 72%;
+    height: 95px;
+    margin-bottom: 5px;
+    border-radius: 6px;
+    border: 1px solid hsl(223, 19%, 93%);
+}
+
+button {
+    color: hsl(358, 79%, 66%);
+    border: none;
+    background-color: white;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.icon {
+    margin-right: 6px;
+}
+
+.profilePic {
+    width: 34px;
+    position: relative;
+    top: 11px;
+}
+
+span {
+    justify-content: center;
+    padding: 6px;
+}
+
+.userInfo {
+    position: relative;
+    bottom: 12px;
+}
+
+.username {
+    font-weight: 500;
+}
+
+.commentText, .whenPosted {
+    color: grey;
+}
+
+ul {
+    list-style-type: none;
+}
+
+#submitBtn {
+    background-color: hsl(238, 40%, 52%);
+    color: white;
+    border-radius: 7px;
+    width: 15%;
+    padding: 14px;
+    font-weight: 100;
+    position: relative;
+    top: -25px;
+    right: -12px;
+}
+
+#submitBtn:hover {
+    background-color: hsl(212, 24%, 26%)
+}
+
+#submitBtn:active {
+    background-color: hsl(239, 57%, 85%);
+}
+
+.editBtn:hover, .replyBtn:hover {
+    background-color: white;
+    color: hsl(212, 24%, 26%)
+}
+
+.editBtn:active, .replyBtn:active {
+    background-color: white;
+    color: hsl(239, 57%, 85%);
+}
+
+.deleteBtn:hover {
+    color: hsl(357, 56%, 47%);
+}
+
+.deleteBtn:active {
+    color: hsl(357, 100%, 86%);
+}
+
+.upArrow {
+    position: relative;
+    right: 43px;
+}
+
+.downArrow {
+    position: relative;
+    right: 57px;
+    top: 56px;
+}
